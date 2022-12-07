@@ -2,8 +2,8 @@
 
 import { greeting, random } from '../src/index.js';
 
-import brainEven from '../src/games/even.js';
+import brainCalc from '../src/games/calc.js';
 
 greeting();
 random();
-brainEven();
+brainCalc();
