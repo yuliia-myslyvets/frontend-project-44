@@ -11,8 +11,8 @@ const brainEven = () => {
     console.log(`Question: ${number}`);
     const answer = readlineSync.question('Your answer: ');
     if (
-      (number % 2 === 0 && answer === 'yes') ||
-      (number % 2 !== 0 && answer === 'no')
+      (number % 2 === 0 && answer === 'yes')
+      || (number % 2 !== 0 && answer === 'no')
     ) {
       console.log('Correct!');
     } else {
