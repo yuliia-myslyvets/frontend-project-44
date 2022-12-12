@@ -4,7 +4,7 @@ import { random, readName } from '../index.js';
 
 const arithmProgression = (number1, step) => {
   const arithmProgressionArray = [];
-  for (let i = 0; i <= 10; i++) {
+  for (let i = 0; i <= 10; i += 1) {
     const number = number1 + step * i;
     arithmProgressionArray.push(number);
   }
