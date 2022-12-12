@@ -30,10 +30,10 @@ const brainProgression = () => {
     } else {
       const incorrect = `${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.\nLet's try again, ${userName}!`;
       console.log(incorrect);
-      break;
+      return;
     }
-    console.log(`Congratulations, ${userName}!`);
   }
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default brainProgression;

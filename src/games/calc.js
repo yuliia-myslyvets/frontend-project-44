@@ -37,10 +37,10 @@ const brainCalc = () => {
     } else {
       const incorrect = `${answer} is wrong answer ;(. Correct answer was ${calculation}.\nLet's try again, ${userName}!`;
       console.log(incorrect);
-      break;
+      return;
     }
-    console.log(`Congratulations, ${userName}!`);
   }
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default brainCalc;

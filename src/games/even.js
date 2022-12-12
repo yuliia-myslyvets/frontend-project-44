@@ -19,10 +19,10 @@ const brainEven = () => {
       const incorrect = answer === 'yes' ? 'no' : 'yes';
       const result = `${answer} is wrong answer ;(. Correct answer was ${incorrect}. \n Lets try again, ${userName}!`;
       console.log(result);
-      break;
+      return;
     }
-    console.log(`Congratulations, ${userName}!`);
   }
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default brainEven;

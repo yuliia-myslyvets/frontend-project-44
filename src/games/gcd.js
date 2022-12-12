@@ -29,8 +29,8 @@ export const brainGcd = () => {
         number2,
       )}. \n Lets try again, ${userName}!`;
       console.log(result);
-      break;
+      return;
     }
-    console.log(`Congratulations, ${userName}!`);
   }
+  console.log(`Congratulations, ${userName}!`);
 };

@@ -4,7 +4,7 @@ import { random, readName } from '../index.js';
 
 const simpleNumber = (number) => {
   for (let i = 2; i < number; i += 1) {
-    if (number % i === 0) {
+    if (number === 0 || number % i === 0) {
       return 'no';
     }
   }
@@ -23,13 +23,13 @@ const brainPrime = () => {
       console.log('Correct!');
     } else {
       const result = `${answer} is wrong answer ;(. Correct answer was ${simpleNumber(
-        number
+        number,
       )}. \n Lets try again, ${userName}!`;
       console.log(result);
-      break;
+      return;
     }
-    console.log(`Congratulations, ${userName}!`);
   }
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default brainPrime;
