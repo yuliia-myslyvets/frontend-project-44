@@ -11,13 +11,13 @@ const brainEven = () => {
     console.log(`Question: ${number}`);
     const answer = readlineSync.question('Your answer: ');
     if (
-      (number % 2 === 0 && answer === 'yes')
-      || (number % 2 !== 0 && answer === 'no')
+      (number % 2 === 0 && answer === 'yes') ||
+      (number % 2 !== 0 && answer === 'no')
     ) {
       console.log('Correct!');
     } else {
       const incorrect = answer === 'yes' ? 'no' : 'yes';
-      const result = `${answer} is wrong answer ;(. Correct answer was ${incorrect}. \n Lets try again, ${userName}!`;
+      const result = `${answer} is wrong answer ;(. Correct answer was ${incorrect}. \n Let's try again, ${userName}!`;
       console.log(result);
       return;
     }
