@@ -16,10 +16,10 @@ const brainProgression = () => {
   console.log(`Hello, ${userName}!`);
   console.log('What number is missing in the progression?');
   for (let i = 0; i < 3; i += 1) {
-    const number1 = Math.abs(random(9) + 1);
-    const step = Math.abs(random(9) + 1);
-    const quantityNumber = Math.abs(random(5) + 5);
-    const unkownMemberIndex = Math.abs(random(5) + 4);
+    const number1 = Number(Math.abs(random(9) + 1));
+    const step = Number(Math.abs(random(9) + 1));
+    const quantityNumber = Number(Math.abs(random(5) + 5));
+    const unkownMemberIndex = Number(Math.abs(random(5) + 4));
     const arithmProgressionArray = arithmProgression(
       number1,
       quantityNumber,
