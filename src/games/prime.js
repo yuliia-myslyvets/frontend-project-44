@@ -23,8 +23,8 @@ const brainPrime = () => {
       console.log('Correct!');
     } else {
       const result = `${answer} is wrong answer ;(. Correct answer was ${simpleNumber(
-        number,
-      )}. \n Lets try again, ${userName}!`;
+        number
+      )}. \n Let's try again, ${userName}!`;
       console.log(result);
       return;
     }

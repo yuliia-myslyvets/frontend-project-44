@@ -26,8 +26,8 @@ export const brainGcd = () => {
     } else {
       const result = `${answer} is wrong answer ;(. Correct answer was ${correctAnswer(
         number1,
-        number2,
-      )}. \n Lets try again, ${userName}!`;
+        number2
+      )}. \n Let's try again, ${userName}!`;
       console.log(result);
       return;
     }
