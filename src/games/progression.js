@@ -2,9 +2,9 @@ import readlineSync from 'readline-sync';
 
 import { random, readName } from '../index.js';
 
-const arithmProgression = (number1, step) => {
+const arithmProgression = (number1, quantityNumber, step) => {
   const arithmProgressionArray = [];
-  for (let i = 0; i <= 10; i += 1) {
+  for (let i = 0; i <= quantityNumber; i += 1) {
     const number = number1 + step * i;
     arithmProgressionArray.push(number);
   }
@@ -18,8 +18,13 @@ const brainProgression = () => {
   for (let i = 0; i < 3; i += 1) {
     const number1 = Math.abs(random(10));
     const step = Math.abs(random(10));
-    const arithmProgressionArray = arithmProgression(number1, step);
+    const quantityNumber = Math.abs(random(5) + 5);
     const unkownMemberIndex = Math.abs(random(10));
+    const arithmProgressionArray = arithmProgression(
+      number1,
+      quantityNumber,
+      step
+    );
     const rightAnswer = arithmProgressionArray[unkownMemberIndex];
     arithmProgressionArray[unkownMemberIndex] = '..';
     const question = arithmProgressionArray.join('  ');
