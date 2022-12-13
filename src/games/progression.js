@@ -19,15 +19,15 @@ const brainProgression = () => {
     const number1 = Math.abs(random(9) + 1);
     const step = Math.abs(random(9) + 1);
     const quantityNumber = Math.abs(random(5) + 5);
-    const unkownMemberIndex = Math.abs(random(5) + 4);
+    const unkownMemberIndex = Math.abs(random(quantityNumber - 1));
     const arithmProgressionArray = arithmProgression(
       number1,
       quantityNumber,
-      step
+      step,
     );
     const rightAnswer = arithmProgressionArray[unkownMemberIndex];
     arithmProgressionArray[unkownMemberIndex] = '..';
-    const question = arithmProgressionArray.join('  ');
+    const question = arithmProgressionArray.join(' ');
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (Number(userAnswer) === rightAnswer) {
